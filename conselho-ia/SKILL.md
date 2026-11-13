@@ -300,4 +300,3 @@ Só guarda uma transcrição se a pessoa o pedir ou se a questão for importante
 - **Anonimiza sempre para a avaliação cruzada.** Se os avaliadores souberem quem disse o quê, vão deferir a certos estilos de pensamento em vez de avaliar pelo mérito.
 - **O presidente pode discordar da maioria.** Se 4 em 5 conselheiros disserem "faz" mas o raciocínio do dissidente for o mais forte, o presidente deve ficar do lado do dissidente e explicar porquê.
 - **Não leves ao conselho questões triviais.** Se a pessoa perguntar algo com uma só resposta certa, responde. O conselho é para a incerteza genuína em que várias perspetivas acrescentam valor.
-- **O relatório visual importa.** A maioria das pessoas vai percorrer o relatório, não ler a transcrição completa. Faz com que o resultado em HTML seja limpo e fácil de percorrer.

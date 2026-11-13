@@ -14,4 +14,5 @@ Os autores originais não revêem nem apoiam esta versão.
 1. Tradução do texto para português de Portugal (tratamento por "tu", exemplos em euros).
 2. Nome da skill alterado para `conselho-ia` e frases-gatilho traduzidas.
 3. Cabeçalho simplificado (`name` e `description`) para ser compatível com o carregamento de skills no Claude.
-4. Sem alterações ao método nem às regras.
+4. Removida a última nota do original, sobre um relatório em HTML, porque contradizia o passo 5 (o veredicto é apresentado no chat, sem ficheiros).
+5. Sem outras alterações ao método nem às regras.

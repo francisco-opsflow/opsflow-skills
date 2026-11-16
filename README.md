@@ -7,7 +7,7 @@ Skills prontas a usar, em português de Portugal, para partilhar.
 | [`responder-emails`](responder-emails) | Lê os e-mails do dia, deixa os rascunhos prontos na tua caixa de correio e separa os que precisam de uma decisão tua. **Nunca envia, arquiva nem mexe no calendário.** | EMAIL |
 | [`notas-para-tarefas`](notas-para-tarefas) | Cola as notas soltas de uma reunião e recebe o e-mail de seguimento, as tarefas com datas e o que ainda está por resolver. | NOTAS |
 | [`voz-dna`](voz-dna) | Dá-lhe 3 textos teus e ele cria uma skill que escreve como tu. | VOZ |
-| [`passa-a-limpo`](passa-a-limpo) | Escreve "passa a limpo" e recebe um bloco curto com o objetivo, as decisões, as regras e o próximo passo, para colares num chat novo sem perderes o contexto (e gastares menos limite). | RESUMO |
+| [`passa-a-limpo`](passa-a-limpo) | Escreve "passa a limpo" e recebe um ficheiro `ESTADO.md` com o objetivo, as decisões, as regras e o próximo passo. Anexa-o a um chat novo e continuas sem perder o contexto (e gastas menos limite). | RESUMO |
 | [`conselho-ia`](conselho-ia) | Leva uma decisão difícil a um conselho de 5 conselheiros de IA, que a analisam, se avaliam entre si de forma anónima e dão um veredicto no chat. | CONSELHO |
 
 ## Como instalar

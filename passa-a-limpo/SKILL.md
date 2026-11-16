@@ -1,11 +1,11 @@
 ---
 name: passa-a-limpo
-description: Quando a pessoa escrever "passa a limpo" (ou "resumo para novo chat", "vou abrir um chat novo"), resume a conversa num bloco curto e colável com o objetivo, as decisões, as regras e o próximo passo, para continuar num chat novo sem perder contexto e sem gastar o limite.
+description: Quando a pessoa escrever "passa a limpo" (ou "resumo para novo chat", "vou abrir um chat novo"), condensa a conversa num ficheiro ESTADO.md pronto a anexar a um chat novo, com o objetivo, as decisões, as regras e o próximo passo, para continuar sem perder contexto e sem gastar o limite.
 ---
 
 # Passa a limpo
 
-Conversas longas gastam mais limite, porque cada resposta obriga o Claude a reler tudo. Esta skill condensa a conversa num bloco pequeno que a pessoa cola num chat novo.
+Conversas longas gastam mais limite, porque cada resposta obriga o Claude a reler tudo. Esta skill condensa a conversa num ficheiro `ESTADO.md` que a pessoa anexa a um chat novo e pronto: o chat novo arranca já a trabalhar.
 
 ## Quando usar
 
@@ -15,37 +15,38 @@ Conversas longas gastam mais limite, porque cada resposta obriga o Claude a rele
 ## O que fazer
 
 1. Relê a conversa e extrai só o que é preciso para continuar. Não inventes nada: se algo não foi dito, não entra.
-2. Responde apenas com o bloco abaixo, dentro de um bloco de código para ser fácil de copiar. Sem introdução e sem comentários antes.
-3. Depois do bloco, escreve uma única linha: "Copia o bloco, abre um chat novo e cola lá para continuares."
+2. Cria o ficheiro `ESTADO.md` com o formato abaixo e entrega-o à pessoa (envia o ficheiro, para ela o poder descarregar). O nome é sempre `ESTADO.md`, sem datas nem variações.
+3. Se não conseguires criar ficheiros nesta conversa, dá o mesmo conteúdo dentro de um bloco de código, para a pessoa o copiar e colar num ficheiro ou diretamente no chat novo.
+4. Não escrevas o conteúdo no chat nem faças introdução. Depois de entregar o ficheiro, escreve uma única linha: "Descarrega o ESTADO.md, abre um chat novo e anexa-o na primeira mensagem para continuares."
 
-## Formato do bloco
+## Formato do ficheiro ESTADO.md
 
 ```
-CONTEXTO PARA CONTINUAR (colado de um chat anterior)
+# ESTADO: [nome curto do tema]
 
-OBJETIVO
+> Instrução para o Claude: isto é o resumo de um chat anterior. Lê tudo, responde numa linha a dizer o que percebeste e avança logo pelo PRÓXIMO PASSO, sem repetir o que já está decidido nem fazer perguntas que já têm resposta aqui.
+
+## Objetivo
 - [o que se está a tentar conseguir, numa ou duas frases]
 
-DECISÕES JÁ TOMADAS
+## Decisões já tomadas
 - [decisão] (porquê, se for relevante)
 
-REGRAS E PREFERÊNCIAS
+## Regras e preferências
 - [tom, formato, idioma, limites, coisas a evitar que a pessoa pediu]
 
-ESTADO ATUAL
+## Estado atual
 - [o que já está feito e o que está a meio; ficheiros, nomes ou números importantes]
 
-PRÓXIMO PASSO
+## Próximo passo
 - [a primeira ação concreta a fazer no chat novo]
-
-Continua a partir daqui, sem repetir o que já está decidido.
 ```
 
 ## Regras
 
-- Mantém o bloco curto: idealmente menos de 250 palavras. Corta o que não muda o próximo passo.
+- Mantém o ficheiro curto: idealmente menos de 250 palavras, sem contar os textos finais guardados por inteiro. Corta o que não muda o próximo passo.
 - Escreve na língua em que a pessoa tem falado.
 - Se uma secção não tiver conteúdo, apaga-a em vez de a preencher com enchimento.
-- Guarda os textos finais que a pessoa quer manter (um guião, um e-mail aprovado) por inteiro, dentro de ESTADO ATUAL, em vez de os resumir.
+- Guarda os textos finais que a pessoa quer manter (um guião, um e-mail aprovado) por inteiro, dentro de "Estado atual", em vez de os resumir.
 - Não incluas palavras-passe, chaves ou dados sensíveis.
-- Se a conversa for curta (poucas mensagens), diz numa linha que ainda não vale a pena trocar de chat e dá o bloco na mesma, se a pessoa quiser.
+- Se a conversa for curta (poucas mensagens), diz numa linha que ainda não vale a pena trocar de chat e entrega o ficheiro na mesma, se a pessoa quiser.
